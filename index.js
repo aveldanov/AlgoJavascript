@@ -14,7 +14,6 @@ const addUpTo = (n) => {
 //   return n * (n + 1) / 2;
 // }
 
-
 let t1 = performance.now();
 
 addUpTo(100000000);
