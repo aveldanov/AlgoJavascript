@@ -12,7 +12,6 @@ const insert = (arr) => {
       arr[j + 1] = arr[j]
       console.log(arr);
 
-
     }
     arr[j + 1] = currentVal;
 
