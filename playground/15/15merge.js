@@ -32,17 +32,33 @@ const merge = (arr1, arr2) => {
   let i = 0;
   let j = 0;
 
-  while (i < arr1.length && j < arr.arr2.length) {
-    if (arr2[j] > arr[i]) {
+  while (i < arr1.length && j < arr2.length) {
+
+    if (arr2[j] > arr1[i]) {
       results.push(arr1[i]);
       i++;
     } else {
-      result.push(arr2[j]);
+      results.push(arr2[j]);
       j++
 
     }
 
   }
+  console.log(i, j);
+
+  while (i < arr1.length) {
+    // console.log(i);
+
+    results.push(arr1[i])
+    i++;
+  }
+  while (j < arr2.length) {
+    console.log(j);
+
+    results.push(arr2[j]);
+    j++;
+  }
+
 
   return results;
 }
@@ -50,4 +66,4 @@ const merge = (arr1, arr2) => {
 
 
 
-console.log(merge([1, 10, 50, 59, 78, 110, 120], [2, 14, 99, 100, 103]));
+console.log(merge([1, 10, 50, 59, 78, 110, 120], [2, 14, 130]));
